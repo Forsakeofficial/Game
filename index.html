@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt na studia - Jakub Hoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="home">
+  <div class="header-width">
+    <h1>PAPIER-KAMIEŃ-NOŻYCE</h1>
+  </div>
+  <!---NAV-->
+  <nav class="navbar">
+    <div class="inner-width">
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="#home">home</a>
+        <a href="#game">gra</a>
+        <a href="#stats">statystyki</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!--GAME-->
+  <section id="game">
+    <div class="game-width">
+      <h2>Wybierz swoją opcje</h2>
+      <div class="game-select">
+        <img data-option="papier" src="img/paper.jpg" alt="papier">
+        <img data-option="kamień" src="img/stone.jpg" alt="kamień">
+        <img data-option="nożyce" src="img/shears.jpg" alt="nożyce">
+      </div>
+      <button class="start">START</button>
+      <h1>Wyniki gry:</h1>
+      <div class="game-panel">
+        <div class="game-panel-left">
+          <p>Twój wybór: <span data-summary="you"></span></p>
+          <p>Wybór komputera: <span data-summary="computer"></span></p>
+        </div>
+        <div class="game-panel-right">
+          <p>Zwycięzca gry: <span data-summary="winner"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--STATS-->
+  <section id="stats">
+    <div class="stats-width">
+      <h1>STATYSTYKI</h1>
+      <div class="stats-game">
+        <p class="numbers">Liczba gier: <span>0</span></p>
+        <p class="wins">Liczba wygranych: <span>0</span></p>
+        <p class="losses">Liczba przegranych: <span>0</span></p>
+        <p class="draws">Liczba remisów: <span>0</span></p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="contact">
+    <h1>Jakub Hoque - Student II roku Informatyka | 2022</h1>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
